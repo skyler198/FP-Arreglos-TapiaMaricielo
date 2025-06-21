@@ -9,14 +9,27 @@ void separar(string &oracion){
 		n++;
 	}
 	//logica para separar palabras
+		for (int i = 0 ;i < n;  i++){
+		if (oracion[i] == ' '){
+			cout << endl;
+		} else {
+			cout << oracion [i];
+		}
+	}
 }
 
 int main (){
 	string oracion;
+	cout << "==========================================================" << endl;
+	cout << "              BIENVENIDO A MI PROGRAMA!" << endl;
+	cout << "==========================================================\n" << endl;
+	
 	cout << "Ingrese una oracion: ";
 	getline(cin, oracion);
 	
 	separar(oracion);
+	
+	cout << "\n          GRACIAS POR USAR MI PORGRAMA <3!" << endl;
 	
 	return 0;
 }
