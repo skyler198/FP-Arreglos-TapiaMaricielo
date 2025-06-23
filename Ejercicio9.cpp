@@ -5,6 +5,11 @@ using namespace std;
 
 int main(){
 	int n;
+	
+	cout << "================================================================" << endl;
+	cout << "                   BIENVENIDO A MI PROGRAMA" << endl;
+	cout << "================================================================" << endl;
+	
 	cout << "ingrese la cantidad de numeros que contendra su vector: ";
 	cin >> n;
 	
@@ -49,5 +54,7 @@ int main(){
     }
     cout << "]" << endl;
 
+	cout << "\n         GRACIAS POR USAR MI PROGRAMA, VUELVA PRONTO!" << endl;
+	
 	return 0;
 }
