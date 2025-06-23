@@ -12,10 +12,19 @@ int main(){
 	
 	//lectura de numeros
 	for (int i = 0; i < n; i++){
-		cout << "Numero " << i + 1 << " : ";
+		cout << "Elemento [" << i + 1 << "] : ";
 		cin >> elementos[i];
 	}
+	//mostrar vector actual
+	
 	//invertir vector
+	for (int i = 0; i < n / 2; i++){
+		int invertido = elementos[i];
+		elementos[i] = elementos[n - 1 - i];
+		elementos[n - 1 - i] = invertido;
+	}
 	//mostrar vector invertido
+	
+	
 	return 0;
 }
