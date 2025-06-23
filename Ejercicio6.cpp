@@ -18,5 +18,16 @@ int main(){
 	}
 	
 	//verificar si es par o impar
+	for (int i = 0; i < n; i++){
+		if (numeros[i] % 2 == 0){
+			par = par + numeros[i];
+		} else {
+			impar = impar + numeros[i];
+		}
+	}
+	
 	//mostrar resultados nwn!
+	cout << par << endl;
+	cout << impar << endl;
+
 }
