@@ -5,6 +5,11 @@ using namespace std;
 
 int main(){
 	int digitos[10];
+	
+	cout << "================================================================" << endl;
+	cout << "                   BIENVENIDO A MI PROGRAMA" << endl;
+	cout << "================================================================" << endl;
+	
 
     cout << "Ingrese los 10 digitos de su numero:" << endl;
 	//leer digitos
@@ -36,5 +41,14 @@ int main(){
     }
     
     //mostrar resultados
-
+    
+    if (esCapicua){
+    	cout << "El numero ingresado SI ES CAPICUA" << endl;
+	} else {
+		cout << "El numero ingresado NO ES CAPICUA" << endl;
+	}
+	
+	cout << "\n         GRACIAS POR USAR MI PROGRAMA, VUELVA PRONTO!" << endl;
+	
+	return 0;
 }
