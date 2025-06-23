@@ -11,6 +11,12 @@ int main() {
     double media, mediana;
     int moda;
     int numeros[tamanio];
+
+    cout << "=====================================\n";
+    cout << "      ESTADISTICAS DE UN ARREGLO     \n";
+    cout << "   Generando " << tamanio << " numeros aleatorios\n";
+    cout << "=====================================\n\n";
+
     
     // Generar números aleatorios entre 100 y 1000
     srand(time(0));
@@ -38,7 +44,7 @@ int main() {
 	
 	//mostrar resultados
 	
-	cout << "\nLa media es: " << media << endl;
+	cout << "\n--> La media es: " << media << endl;
 	
 	//calcular mediana
 	
@@ -67,7 +73,7 @@ int main() {
 	
     //mostrar resultados
     
-    cout << "\nLa mediana es: " << mediana << endl;
+    cout << "\n--> La mediana es: " << mediana << endl;
     
 	//calular moda
 	
@@ -90,7 +96,9 @@ int main() {
     
 	//mostrar resultados
 	
-	cout << "\nLa moda es: " << moda << " se repitio " << maxRepeticion << endl;
+	cout << "\n--> La moda es: " << moda << " se repitio " << maxRepeticion << " veces" << endl;
+	
+	cout << "\n GRACIAS POR USAR MI PROGRAMA, VUELVA PRONTO!" << endl;
 	
 	return 0;
 }
