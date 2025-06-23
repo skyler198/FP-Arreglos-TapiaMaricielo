@@ -26,6 +26,7 @@ int main() {
 		}
 	}
 	cout << "]" << endl;
+	
 	//calcular media
 	
 	double suma = 0;
@@ -35,9 +36,30 @@ int main() {
 	}
 	media = suma / tamanio;
 	
+	//mostrar resultados
+	
 	cout << "\nLa media es: " << media << endl;
 	
 	//calcular mediana
+	
+	int aux;
+	for (int i = 0; i < tamanio - 1; i++) {
+	   for (int j = 0; j < tamanio - 1 - i; j++) {
+	        if (numeros[j] > numeros[j + 1]) {
+            aux = numeros[j];
+            numeros[j] = numeros[j + 1];
+            numeros[j + 1] = aux;
+	        }
+	    }
+	}
+	
+	mediana = (numeros[tamanio / 2 - 1] + numeros[tamanio / 2]) / 2;
+	
+    //mostrar resultados
+    
+    cout << "\nLa mediana es: " << mediana << endl;
+    
 	//calular moda
+	
 	//mostrar resultados
 }
