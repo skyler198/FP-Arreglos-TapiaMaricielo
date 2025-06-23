@@ -8,6 +8,8 @@ using namespace std;
 
 int main() {
     int tamanio = 30;
+    double media, mediana;
+    int moda;
     int numeros[tamanio];
     
     // Generar números aleatorios entre 100 y 1000
@@ -25,6 +27,16 @@ int main() {
 	}
 	cout << "]" << endl;
 	//calcular media
+	
+	double suma = 0;
+	
+	for (int i = 0; i < tamanio; i++){
+		suma = suma + numeros[i];
+	}
+	media = suma / tamanio;
+	
+	cout << "\nLa media es: " << media << endl;
+	
 	//calcular mediana
 	//calular moda
 	//mostrar resultados
