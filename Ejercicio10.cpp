@@ -52,8 +52,18 @@ int main() {
 	        }
 	    }
 	}
+	//mostrar arreglo ordenado
 	
-	mediana = (numeros[tamanio / 2 - 1] + numeros[tamanio / 2]) / 2;
+	cout << "\nEl arreglo ordenado (menor a mayor) es: [";
+	for (int i = 0; i < tamanio; i++) {
+	    cout << numeros[i];
+	    if (i < tamanio - 1) {
+	        cout << ", ";
+	    }
+	}
+	cout << "]" << endl;
+	
+	mediana = (numeros[tamanio / 2 - 1] + numeros[tamanio / 2]) / 2.0;
 	
     //mostrar resultados
     
@@ -61,5 +71,26 @@ int main() {
     
 	//calular moda
 	
+	moda = numeros[0]; // asuminos que el primer elemento es la moda
+    int maxRepeticion = 0; // inicializamos en cero maxRepeticiones para guardar los resultados
+ 	
+    for (int i = 0; i < tamanio; i++) {
+    	int repetido = 0; // repetido es un acumulador
+        for (int j = 0; j < tamanio; j++) {
+            if (numeros[i] == numeros[j]) {
+                repetido++;
+            }
+        }
+
+        if (repetido > maxRepeticion) {
+            maxRepeticion = repetido;
+            moda = numeros[i];
+        }
+    }
+    
 	//mostrar resultados
+	
+	cout << "\nLa moda es: " << moda << " se repitio " << maxRepeticion << endl;
+	
+	return 0;
 }
